@@ -1,0 +1,70 @@
+/* About Pag */
+:root{
+    --main-color:#f5cb57;
+    --text-color:#333;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.contanier .about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contanier .about .text h2{
+    font-size: 40px;
+    margin: 20px;
+    font-weight: 800;
+
+}
+.contanier .about .text p{
+    width: 400px;
+    font-size: 16px;
+    margin:10px;
+    padding: 10px;
+    color: var(--text-color);
+    
+}
+.contanier .about-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px;
+
+}
+.contanier .about-bar .card{
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contanier .about-bar .card:hover{
+    transition: 0.5s linear 0s;
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    -webkit-transition: 0.5s linear 0s;
+    -moz-transition: 0.5s linear 0s;
+    -ms-transition: 0.5s linear 0s;
+    -o-transition: 0.5s linear 0s;
+}
+.contanier .about-bar .card h6{
+    font-size:16 ;
+    margin: 5px;
+    font-weight: 800;
+}
+.contanier .about-bar .card p{
+    font-size: 12px;
+    color: var(--text-color);
+}
