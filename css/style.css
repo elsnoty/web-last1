@@ -15,12 +15,13 @@ html{
 
 body{
     font-family: 'Open Sans', sans-serif;
-
 }
 ul{
     list-style: none;
-    
 }
+a{text-decoration: none;
+    color: snow;
+    transition: color 0.3s;}
 .contanier {
     padding-left: 15px;
     padding-right: 15px;
@@ -141,3 +142,39 @@ margin: auto;
 
 
 /* start body */
+
+/* start footer  */
+footer{
+    background: black;
+}
+footer .footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.retil-logo div img{
+cursor: pointer;
+}
+.social ul{
+    display: flex;
+}
+.social ul li:not(:last-child){
+margin-right: 20px;
+}
+footer div h3{
+    color: snow;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+footer div ul li{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+footer div ul li a:hover{
+    color: red;
+}
+/* end footer  */
