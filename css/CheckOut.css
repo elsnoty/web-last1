@@ -63,12 +63,15 @@ input ,select{
     font-size: 16px;
     position: relative;
     font-weight: 300;
+    margin: 10px;
     color: var(--text-color);
 }
 .text p span{
     position: absolute;
+    font-weight: 300;
     right: 0;
-
+    color: var(--text-color);
+    
 }
 .bank-pay{
     position: relative;
