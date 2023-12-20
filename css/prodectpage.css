@@ -1,16 +1,19 @@
 /*home*/
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 #root-prodect {
     padding: 30px;
 
 
 
 }
-body{
-    font-family: 'Poppins', sans-serif;;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    ;
 }
 
 .contaneir-prodect-images {
@@ -79,12 +82,85 @@ body{
 .prodect-details {
     border-radius: 5px;
 
-    background-color: #f5f5f5;
     width: 35%;
-    
+
 
 }
 
+
+
+.lighgrey {
+    color: #7f7f7f;
+    font-size: small;
+}
+
+.green {
+    color: #008000;
+    font-size: small;
+}
+
+.price {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+
+.colors {
+
+    padding-top: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 100% */
+    letter-spacing: 0.6px;
+}
+
+
+.con-increment {
+    display: flex;
+    width: auto;
+    padding: 8px 0px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#down-arrow {
+
+
+    height: 30px;
+
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+#total-count {
+
+    height: 30px;
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.50);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+#up-arrow {
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 0px 4px 4px 0px;
+    background: var(--Secondary-2, #DB4444);
+}
+
+#buynow {
+    margin-left: 10px;
+    border-radius: 4px;
+    background: #DB4444;
+    padding: 5px 8px 5px 8px;
+}
 
 
 /*                prodect details                */
