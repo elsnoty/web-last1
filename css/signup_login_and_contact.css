@@ -59,7 +59,7 @@ button:hover {
     margin-top: 10px;
     color: var(--text-color);
 }
-.log  a{
+  a{
     font-weight: 300;
     color: blue;
     font-size: 16px;
