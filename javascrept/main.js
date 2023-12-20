@@ -14,6 +14,38 @@ function CopyCoupon() {
     }
   });
 }
+// countDown
+let countDown= new Date("dec 22, 2023 00:00:00")
+console.log(countDown);
+let counter = setInterval(() => {
+// date now
+let dateNow = new Date().getTime();
+let dateDiff = countDown - dateNow;
+let day = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+let hour = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let minute = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
+let second = Math.floor((dateDiff % (1000 * 60)) / 1000);
+document.querySelector(".day").innerHTML = day < 10 ? `0${day}` : day;
+document.querySelector(".hour").innerHTML = hour < 10 ? `0${hour}` : hour;
+document.querySelector(".minute").innerHTML = minute < 10 ? `0${minute}` : minute;
+document.querySelector(".second").innerHTML = second < 10 ? `0${second}` : second;
+if (dateDiff < 0) {
+clearInterval(counter);
+}
+}, 1000);
+// countDown
+
+// today scroll 
+function scroll_l() {
+  let product_r = document.querySelector(".box-product");
+  product_r.scrollBy(-350, 0)
+}
+function scroll_r() {
+  let product_l = document.querySelector(".box-product");
+  product_l.scrollBy(350, 0)
+  
+}
+// end today scroll
 
 /* old code */
 /*

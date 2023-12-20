@@ -53,6 +53,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+
 }
 
 .main-img img {
@@ -69,8 +71,11 @@
 /*                prodect details                */
 
 .prodect-details {
-    background-color: rgb(0, 188, 35);
+    border-radius: 5px;
+
+    background-color: #f5f5f5;
     width: 35%;
+    
 
 }
 
