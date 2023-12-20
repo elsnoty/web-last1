@@ -100,9 +100,11 @@ background-color: var(--main-color);
     margin: 20px;
 }
 .text-error h1{
-    font-size: 60px;
+    font-size: 50px;
     margin: 30px;
     font-weight: 800;
+    width: 100%;
+    text-align: center;
 }
 .text-error p{
     font-size: 20px;
