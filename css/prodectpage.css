@@ -1,10 +1,16 @@
 /*home*/
-
+*{
+    padding: 0;
+    margin: 0;
+}
 #root-prodect {
     padding: 30px;
 
 
 
+}
+body{
+    font-family: 'Poppins', sans-serif;;
 }
 
 .contaneir-prodect-images {

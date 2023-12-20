@@ -1,13 +1,15 @@
 /* About Pag */
+*{
+    padding: 0;
+    margin: 0;
+}
 :root{
     --main-color:#f5cb57;
     --text-color:#333;
 }
 body{
-    padding: 0;
-    margin: 0;
+    font-family: 'Poppins', sans-serif;;
 }
-
 html{
     scroll-behavior: smooth;
 }
