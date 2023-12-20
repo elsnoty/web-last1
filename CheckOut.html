@@ -1,177 +1,192 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CheckOut</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link type="icon" sizes="96x96" rel="icon" href="images/logo.png">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <link rel="stylesheet" href="css/CheckOut.css">
-    <script src='main.js'></script>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>CheckOut</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+            rel="stylesheet">
+        <link type="icon" sizes="96x96" rel="icon" href="images/logo.png">
+        <link rel='stylesheet' type='text/css' media='screen'
+            href='css/style.css'>
+        <link rel="stylesheet" href="css/CheckOut.css">
+        <script src='main.js'></script>
+    </head>
 
-<body>
-    <div id="sales_bar">
-        Delivery Express Free And and summer sale-
-        OFF 50%! <a id="copy-coupon" onclick="CopyCoupon()"> GET COUPON</a>
-    </div>
-    <!-- Start  Header  -->
-    <header>
+    <body>
+        <div id="sales_bar">
+            Delivery Express Free And and summer sale-
+            OFF 50%! <a id="copy-coupon" onclick="CopyCoupon()"> GET COUPON</a>
+        </div>
+        <!-- Start  Header  -->
+        <header>
+            <div class="contanier">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="Image Not Found!">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="signup.html">SignUp</a></li>
+                    </ul>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <div class="section"><img style="width: 100%; text-align: center;"
+                src="images/svg/Line 3.svg" alt></div>
+
+        <!-- End Header -->
+
         <div class="contanier">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="Image Not Found!">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="signup.html">SignUp</a></li>
-                </ul>
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="CheckOut">
+                <div class="Shipping-data">
+                    <form action="#" method="post">
+                        <h2>Billing Details</h2>
+                        <label for="fristname">Frist Name:</label>
+                        <input type="text" id="fristname" name="fristname"
+                            required>
+
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname"
+                            required>
+
+                        <label for="Phone">Phone:</label>
+                        <input type="text" id="Phone" name="Phone" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="city">City:</label>
+                        <select id="city" name="city">
+                            <option selected value="Cairo">Cairo</option>
+                            <option value="Alexandria">Alexandria</option>
+                            <option value="Giza">Giza</option>
+                        </select>
+
+                        <label for="Streetaddress">Street Address:</label>
+                        <input type="text" id="Streetaddress"
+                            name="Streetaddress" required>
+
+                        <label for="floor">Apartment, floor, etc.
+                            (optional):</label>
+                        <input type="text" id="floor" name="floor" required>
+
+                        <div class="checkbox">
+                            <input id="checkbox" type="checkbox" name="checkbox"
+                                required>
+                            <label for="checkbox">Save this information for
+                                faster check-out next time</label>
+                        </div>
+
+                    </form>
                 </div>
-            </nav>
-
-        </div>
-    </header>
-    <div class="section"><img style="width: 100%; text-align: center;" src="images/svg/Line 3.svg" alt=""></div>
-
-    <!-- End Header -->
-
-    <div class="contanier">
-        <div class="CheckOut">
-            <div class="Shipping-data">
-                <form action="#" method="post">
-                    <h2>Billing Details</h2>
-                    <label for="fristname">Frist Name:</label>
-                    <input type="text" id="fristname" name="fristname" required>
-
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" required>
-
-                    <label for="Phone">Phone:</label>
-                    <input type="text" id="Phone" name="Phone" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="city">City:</label>
-                    <select id="city" name="city">
-                        <option selected value="Cairo">Cairo</option>
-                        <option value="Alexandria">Alexandria</option>
-                        <option value="Giza">Giza</option>
-                    </select>
-
-                    <label for="Streetaddress">Street Address:</label>
-                    <input type="text" id="Streetaddress" name="Streetaddress" required>
-
-                    <label for="floor">Apartment, floor, etc. (optional):</label>
-                    <input type="text" id="floor" name="floor" required>
-
-                    <div class="checkbox">
-                        <input id="checkbox" type="checkbox" name="checkbox" required>
-                        <label for="checkbox">Save this information for faster check-out next time</label>
+                <!--Paymentdata  -->
+                <div class="Paymentdata">
+                    <div class="image">
+                        <img src="images/CheckOut/product1.png"
+                            alt="Image Not Found!">
+                        <img src="images/CheckOut/product2.png"
+                            alt="Image Not Found!">
                     </div>
 
-                </form>
-            </div>
-            <!--Paymentdata  -->
-            <div class="Paymentdata">
-                <div class="image">
-                    <img src="images/CheckOut/product1.png" alt="Image Not Found!">
-                    <img src="images/CheckOut/product2.png" alt="Image Not Found!">
+                    <div class="text">
+                        <p>Subtotal: <span>$1750</span></p>
+                        <hr>
+                        <p>Shipping: <span>Free</span></p>
+                        <hr>
+                        <p>Total: <span>$1750</span></p>
+                    </div>
+                    <form action="#">
+                        <div class="bank-pay">
+                            <input id="Bank" type="radio" name="checkbox">
+                            <label for="Bank">Bank</label>
+                            <img src="images/CheckOut/bank.png"
+                                alt="Image Not Found!">
+                        </div>
+                        <div class="installments">
+                            <input id="installments" type="radio"
+                                name="checkbox">
+                            <label for="installments">installments</label>
+                        </div>
+                        <div class="cash">
+                            <input id="Cash" type="radio" name="checkbox"
+                                checked>
+                            <label for="Cash">Cash on delivery</label>
+                        </div>
+                        <div class="Coupon">
+                            <input type="text" name="Coupon Code"
+                                placeholder="Coupon Code">
+                            <button type="submit">Apply Coupon</button>
+                            <a class="a-print" href="print.html">Print</a>
+                        </div>
+                        <button type="submit">Place Order</button>
+                    </form>
                 </div>
 
-                <div class="text">
-                    <p>Subtotal: <span>$1750</span></p>
-                    <hr>
-                    <p>Shipping: <span>Free</span></p>
-                    <hr>
-                    <p>Total: <span>$1750</span></p>
-                </div>
-                <form action="#">
-                    <div class="bank-pay">
-                        <input id="Bank" type="radio" name="checkbox">
-                        <label for="Bank">Bank</label>
-                        <img src="images/CheckOut/bank.png" alt="Image Not Found!">
-                    </div>
-                    <div class="installments">
-                        <input id="installments" type="radio" name="checkbox">
-                        <label for="installments">installments</label>
-                    </div>
-                    <div class="cash">
-                        <input id="Cash" type="radio" name="checkbox" checked>
-                        <label for="Cash">Cash on delivery</label>
-                    </div>
-                    <div class="Coupon">
-                        <input type="text" name="Coupon Code" placeholder="Coupon Code">
-                        <button type="submit">Apply Coupon</button>
-                    </div>
-                    <button type="submit">Place Order</button>
-                </form>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    <!-- End body -->
-
-
-
-
-
-    <!--                                              start  Footer                                   -->
-    <footer>
-        <div class="footer">
-            <div class="retil-logo">
-                <div><img style="width: 50px;" src="images/logo.png" alt=""></div>
-            </div>
-            <div class="support">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="">111 Bijoy sarani, Dhaka, <br>DH 1515, Bangladesh.</a></li>
-                    <li><a href="">retilStore@gmail.com</a></li>
-                    <li><a href="">+88015-88888-9999</a></li>
-                </ul>
-            </div>
-            <div class="account">
-                <h3>Account</h3>
-                <ul>
-                    <li><a href="">My Account</a></li>
-                    <li><a href="">Login / Register</a></li>
-                    <li><a href="">Wishlist</a></li>
-                    <li><a href="">Shop</a></li>
-                </ul>
-            </div>
-            <div class="quickLink">
-                <h3>QuickLink</h3>
-                <ul>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms Of Use</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="social">
-                <h3>Social</h3>
-                <ul>
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
             </div>
         </div>
-    </footer>
-    <!--                   Footer                           -->
-</body>
+
+        <!-- End body -->
+
+        <!--                                              start  Footer                                   -->
+        <footer>
+            <div class="footer">
+                <div class="retil-logo">
+                    <div><img style="width: 50px;" src="images/logo.png"
+                            alt></div>
+                </div>
+                <div class="support">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href>111 Bijoy sarani, Dhaka, <br>DH 1515,
+                                Bangladesh.</a></li>
+                        <li><a href>retilStore@gmail.com</a></li>
+                        <li><a href>+88015-88888-9999</a></li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href>My Account</a></li>
+                        <li><a href>Login / Register</a></li>
+                        <li><a href>Wishlist</a></li>
+                        <li><a href>Shop</a></li>
+                    </ul>
+                </div>
+                <div class="quickLink">
+                    <h3>QuickLink</h3>
+                    <ul>
+                        <li><a href>Privacy Policy</a></li>
+                        <li><a href>Terms Of Use</a></li>
+                        <li><a href>FAQ</a></li>
+                        <li><a href>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href><i
+                                    class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href><i
+                                    class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!--                   Footer                           -->
+    </body>
 
 </html>
