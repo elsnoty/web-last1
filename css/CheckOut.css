@@ -93,3 +93,21 @@ button {
 button:hover {
 background-color: var(--main-color);
 }
+/* Error page  */
+.text-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.text-error h1{
+    font-size: 60px;
+    margin: 30px;
+    font-weight: 800;
+}
+.text-error p{
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 300;
+}
