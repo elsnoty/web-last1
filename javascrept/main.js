@@ -35,7 +35,7 @@ clearInterval(counter);
 }, 1000);
 // countDown
 
-// today scroll 
+// today scroll z
 function scroll_l() {
   let product_r = document.querySelector(".box-product");
   product_r.scrollBy(-350, 0)
@@ -46,6 +46,9 @@ function scroll_r() {
   
 }
 // end today scroll
+//start catogries
+
+
 
 /* old code */
 /*
