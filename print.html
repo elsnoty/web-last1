@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>CheckOut</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+            rel="stylesheet">
+        <link type="icon" sizes="96x96" rel="icon" href="images/logo.png">
+        <link rel='stylesheet' type='text/css' media='screen'
+            href='css/style.css'>
+        <link rel="stylesheet" href="css/CheckOut.css">
+        <style>
+        @media print {
+            body {
+                font-family: 'Poppins', Arial, sans-serif;
+            }
+            header, footer, .icon {
+                display: none;
+            }
+            .section {
+                display: none;
+            }
+            .CheckOut {
+                margin: 0;
+                border: none;
+            }
+            .Shipping-data h2 {
+                font-size: 20px;
+                margin-top: 0;
+            }
+            label, input, select {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .checkbox {
+                margin-top: 10px;
+            }
+            .Paymentdata {
+                margin: 0;
+            }
+            .text span {
+                float: right;
+            }
+            .Coupon {
+                display: none;
+            }
+            button {
+                display: none;
+            }
+            .footer {
+                display: none;
+            }
+        }
+    </style>
+        <script src='main.js'></script>
+    </head>
+    <body>
+        <div id="sales_bar">
+            Delivery Express Free And and summer sale- OFF 50%! <a
+                id="copy-coupon" onclick="CopyCoupon()"> GET COUPON</a>
+        </div>
+
+        <div class="contanier">
+            <div class="CheckOut">
+                <div class="Shipping-data">
+                    <form action="#" method="post">
+                        <h2>Billing Details</h2>
+                        <label for="fristname">First Name:</label>
+                        <input type="text" id="fristname" name="fristname"
+                            required>
+
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname"
+                            required>
+
+                        <label for="Phone">Phone:</label>
+                        <input type="text" id="Phone" name="Phone" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="city">City:</label>
+                        <select id="city" name="city">
+                            <option selected value="Cairo">Cairo</option>
+                            <option value="Alexandria">Alexandria</option>
+                            <option value="Giza">Giza</option>
+                        </select>
+
+                        <label for="Streetaddress">Street Address:</label>
+                        <input type="text" id="Streetaddress"
+                            name="Streetaddress" required>
+
+                        <label for="floor">Apartment, floor, etc.
+                            (optional):</label>
+                        <input type="text" id="floor" name="floor" required>
+
+                        <div class="checkbox">
+                            <input id="checkbox" type="checkbox" name="checkbox"
+                                required>
+                            <label for="checkbox">Save this information for
+                                faster check-out next time</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="Paymentdata">
+                    <div class="image">
+                        <img src="images/CheckOut/product1.png"
+                            alt="Image Not Found!">
+                        <img src="images/CheckOut/product2.png"
+                            alt="Image Not Found!">
+                    </div>
+                    <div class="text">
+                        <p>Subtotal: <span>$1750</span></p>
+                        <hr>
+                        <p>Shipping: <span>Free</span></p>
+                        <hr>
+                        <p>Total: <span>$1750</span></p>
+                    </div>
+                    <form action="#">
+                        <div class="bank-pay">
+                            <input id="Bank" type="radio" name="checkbox">
+                            <label for="Bank">Bank</label>
+                            <img src="images/CheckOut/bank.png"
+                                alt="Image Not Found!">
+                        </div>
+                        <div class="installments">
+                            <input id="installments" type="radio"
+                                name="checkbox">
+                            <label for="installments">Installments</label```html
+                                <select id="installments-number"
+                                    name="installments-number">
+                                    <option value="1">1 Installment</option>
+                                    <option value="2">2 Installments</option>
+                                    <option value="3">3 Installments</option>
+                                </select>
+                            </div>
+                            <div class="Coupon">
+                                <label for="coupon-code">Coupon Code:</label>
+                                <input type="text" id="coupon-code"
+                                    name="coupon-code">
+                                <button type="button"
+                                    onclick="ApplyCoupon()">Apply</button>
+                            </div>
+                            <button type="submit">Place Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>&copy; 2023 CheckOut. All rights reserved.</p>
+                </div>
+            </footer>
+        </body>
+    </html>

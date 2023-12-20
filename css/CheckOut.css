@@ -85,7 +85,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 20px;
+    margin: 10px;
 }
 
 button:hover {
@@ -110,4 +110,21 @@ background-color: var(--main-color);
     font-size: 20px;
     color: var(--text-color);
     font-weight: 300;
+}
+
+
+
+.a-print {
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: small;
+}
+
+.a-print:hover {
+background-color: var(--main-color);
 }
