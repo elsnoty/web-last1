@@ -14,8 +14,9 @@ function CopyCoupon() {
     }
   });
 }
+
 // countDown
-let countDown= new Date("dec 22, 2023 00:00:00")
+let countDown= new Date("dec 21, 2023 04:00:00")
 console.log(countDown);
 let counter = setInterval(() => {
 // date now
