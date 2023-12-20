@@ -45,7 +45,6 @@
 
     button {
         background-color: black;
-       
         color: white;
         padding: 15px 15px;
         border: none;
@@ -59,6 +58,11 @@ button:hover {
 .log {
     margin-top: 10px;
     color: var(--text-color);
+}
+.log  a{
+    font-weight: 300;
+    color: blue;
+    font-size: 16px;
 }
 .signup-image {
     flex: 1;
