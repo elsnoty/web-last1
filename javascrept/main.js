@@ -1,20 +1,27 @@
-function CopyCoupon() {
-  navigator.permissions.query({ name: 'clipboard-write' }).then(result => {
-    if (result.state === 'granted' || result.state === 'prompt') {
-      navigator.clipboard.writeText("Coupon50%OFF").then(() => {
-        // Alert the copied text
-        alert("Copied: Coupon50%OFF");
-
-        // Change the color of the element
-        var couponcolor = document.getElementById("copy-coupon");
-        couponcolor.style.color = "rgb(167, 243, 208)";
-      }).catch(error => {
-        console.error('Failed to copy text:', error);
-      });
-    }
-  });
+let coupon = document.getElementById("coupon")
+coupon.addEventListener("click", function() {
+  showMessage("Copied: Coupon50%OFF");
+  setTimeout(function() {
+  hideMessage();
+  }, 2500);
+});
+function showMessage(message) {
+  let messageC = document.getElementById("message");
+  messageC.textContent = message;
+  messageC.style.cssText = `z-index: 1;
+  position: relative;
+  background: darkgoldenrod;
+  padding: 5px;
+  opacity: 0.8;
+  border-radius: 5px;
+  left: 54rem;
+  /* top: 25px; */
+  width: 8%;`;
 }
-
+function hideMessage() {
+  let messageC = document.getElementById("message");
+  messageC.style.display = "none";
+}
 // countDown
 let countDown= new Date("dec 22, 2023 04:00:00")
 console.log(countDown);
