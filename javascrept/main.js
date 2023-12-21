@@ -16,7 +16,7 @@ function CopyCoupon() {
 }
 
 // countDown
-let countDown= new Date("dec 21, 2023 04:00:00")
+let countDown= new Date("dec 22, 2023 04:00:00")
 console.log(countDown);
 let counter = setInterval(() => {
 // date now
@@ -47,7 +47,29 @@ function scroll_r() {
   
 }
 // end today scroll
-//start catogries
+
+// ssssssssssssssssssssssssssssssssssssss
+let plus = document.getElementById("up-arrow")
+let negtive = document.getElementById("down-arrow")
+let num =document.getElementById("total-count")
+console.log(plus);
+console.log(parseInt(num.textContent));
+negtive.addEventListener("click", function() {
+  let y = parseInt(num.textContent);
+  y -=1
+  if (y >= 0) {
+    num.textContent = y;
+  }else{
+    console.log("dddddd");
+  }
+})
+
+plus.addEventListener("click", function() {
+  let y = parseInt(num.textContent)
+  y += 1;
+  num.textContent = y;
+})
+
 
 
 
